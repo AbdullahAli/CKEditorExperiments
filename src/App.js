@@ -7,6 +7,7 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
+import Emoji from '@wwalc/ckeditor5-emoji/src/emoji';
 
 class App extends Component {
   render() {
@@ -17,8 +18,8 @@ class App extends Component {
           onInit={ editor => console.log( 'Editor is ready to use!', editor ) }
           onChange={ ( event, editor ) => console.log( { event, editor } ) }
           config={ {
-              plugins: [ Essentials, Paragraph, Bold, Italic, Heading ],
-              toolbar: [ 'heading', '|', 'bold', 'italic', '|', 'undo', 'redo', ]
+              plugins: [ Essentials, Paragraph, Bold, Italic, Heading, Emoji ],
+              toolbar: [ 'heading', '|', 'bold', 'italic', '|', 'undo', 'redo', '|', 'emoji' ]
           } }
           editor={ ClassicEditor }
           data="<p>Hello from CKEditor 5!</p>"

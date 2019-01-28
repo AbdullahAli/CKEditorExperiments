@@ -12,6 +12,7 @@
     "@ckeditor/ckeditor5-paragraph": "^10.0.4",
     "@ckeditor/ckeditor5-react": "^1.1.0",
     "@svgr/webpack": "2.4.1",
+    "@wwalc/ckeditor5-emoji": "^11.0.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "9.0.0",
     "babel-jest": "23.6.0",
